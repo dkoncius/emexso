@@ -1,0 +1,310 @@
+/* Remtasi: https://themehoster.com/tf/html/tm/emexso/demo/index.html# */
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Josefin+Sans:wght@400;500;600;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+  font-size: 15px;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    color: #0c2461;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #e4f1fb;
+    margin: 10px 50px;
+    padding-bottom: 10px;
+
+}
+
+.calls {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+}
+
+.calls i {
+    color: #ff5740;
+}
+
+.calls div {
+    margin-right: 15px;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+}
+
+.social a {
+    border: 1px solid #ff5740;
+    display: block;
+    width: 35px;
+    height: 35px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 4px;
+    color: #ff5740;
+    font-size: 1rem;
+    margin: 8px;
+    transition: 0.3s;
+}
+
+.social a:hover {
+    background-color: #ff5740;
+    color: white;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.links {
+   word-spacing: 15px;
+
+}
+
+.links a {
+    font-weight: 600;
+    color: black;
+}
+
+button {
+    border: 1px solid #ff6348;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #ff6348;
+    padding: 10px 22px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: white;
+    color: #ff6348;
+}
+
+/* Hero area */
+#hero-area {
+    background-color: #fbd7b5;
+}
+
+.container {
+    padding: 170px 50px;
+    display: flex;
+    align-items: center;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+h5 {
+    font-weight: 600;
+    color: #fb4f31;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+h1 {
+    font-size: 4rem;
+    line-height: 75px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+p {
+    font-family: 'Barlow', sans-serif;
+    font-size: 1rem;
+    line-height: 30px;
+    font-weight: 400;
+}
+
+#hero-area button {
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 15px 30px;
+    margin-top: 30px;
+}
+
+span {
+    font-weight: 600;
+    margin-left: 20px;
+    font-size: 1.3rem;
+}
+
+.content,
+.img {
+    width: 50%;
+}
+
+.img {
+    max-width: 400px;
+    object-fit: cover;
+    animation: bouncing 2s infinite alternate linear;
+}
+
+
+/* About area */
+#about-area .container {
+    align-items: flex-start;
+    flex-direction: row-reverse;
+}
+
+#about-area .content {
+    position: relative;
+    width: 100%;
+}
+
+#about-area button {
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 15px 30px;
+    margin-top: 30px;
+}
+
+
+
+.images {
+    margin-top: 100px;
+    margin-right: 50px;
+    position: relative;
+    width: 100%;
+}
+
+
+.images .img {
+    position: absolute;
+    width: 100%;
+}
+.images .back-img {
+    animation: none;
+    top: -30px;
+}
+
+.lists {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    margin-top: 30px;
+}
+
+ul {
+    list-style: none;
+    font-weight: 600;
+}
+
+ul li {
+    line-height: 30px;
+}
+
+ul i {
+    color: #ff6348;
+}
+
+
+@keyframes bouncing {
+    from {transform: translateY(-10px)}
+    to {transform: translateY(10px)}
+}
+
+@media (max-width: 768px){
+    .container {
+      text-align: center;
+    }
+    header,
+    .calls{
+        flex-direction: column;
+    }
+
+    header {
+        margin-top: 30px;
+        line-height: 25px;
+    }
+
+    .links {
+        display: none;
+    }
+
+    .container {
+        padding-top: 50px;
+        flex-wrap: wrap;
+    }
+
+    #hero-area .container {
+        padding-bottom: 50px;
+    }
+
+
+    .content,
+    .img {
+    width: 100%;
+    }
+
+    .img {
+        padding: 50px 0;
+        margin: 0 auto;
+        padding-bottom: 50px;
+    }
+
+    .images {
+      text-align: justify;
+      margin: 100px auto;
+
+    }
+
+    .images .img {
+      max-width: 500px;
+      padding: 0;
+    }
+
+    h1 {
+      font-size: 3rem;
+    }
+
+    .lists {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 420px){
+    html {
+        font-size: 12px;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      line-height: 50px;
+    }
+
+    button {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    #about-area button {
+        margin-bottom: 0;
+    }
+
+    nav button {
+        margin-bottom: 0;
+    }
+}
